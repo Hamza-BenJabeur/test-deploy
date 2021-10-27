@@ -1,0 +1,8 @@
+---
+- hosts: test
+
+  tasks:
+
+  - name: "Deploy"
+    command: "sudo docker-compose -f /home/hamza/test-deploy/docker-compose.yml up -d"
+ 
