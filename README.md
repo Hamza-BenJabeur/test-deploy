@@ -19,7 +19,7 @@ sudo nano /etc/ansible/hosts
 - Add the ip adress of the instance in the host file.
 ```yaml
 [host]
-@ip-public
+public-ip address
 ```
 - Generate public key 
 ```bash
