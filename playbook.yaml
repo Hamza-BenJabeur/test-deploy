@@ -2,6 +2,12 @@
 - hosts: test
 
   tasks:
+   - name: install docker-compose
+     apt: name=docker-compose state=latest
+   - name: (Enable it on System Boot)
+     service: name=docker-compose enabled=yes
+   - name: start docker-compose
+      service: name=docker-compose state=started
 
   - name: "Deploy"
     command: "sudo docker-compose -f /home/hamza/test-deploy/docker-compose.yml up -d"
