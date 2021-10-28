@@ -5,7 +5,8 @@ const cors = require("cors");
 const app = express();
 
 var corsOptions = {
-  origin:  "http://20.94.198.235"
+  //in the FILL_ME blank put your public ip adress of the instance.
+  origin:  "FILL_ME"
 };
 
 app.use(cors(corsOptions));
