@@ -22,9 +22,7 @@ exports.create = async(req, res) => {
   };
 
   // Save Pet in the 
-  console.log("ahla+ ",pet.name);
   const p = await Pet.findOne({ where: { name: pet.name } });
-  console.log("ahlannnnnnnn+ ",p instanceof Pet);
   if(p === null){
     Pet.create(pet)
     .then(data => {
