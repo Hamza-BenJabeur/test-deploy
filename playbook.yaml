@@ -5,7 +5,8 @@
   - name: install docker-compose
     apt: name=docker-compose state=latest
   - name: "Deploy"
-    command: "sudo docker-compose -f /home/hamza/test-deploy/docker-compose.yml>
+    command: "sudo docker-compose -f /home/hamza/test-deploy/docker-compose.yml up -d"
+
 
 
 
